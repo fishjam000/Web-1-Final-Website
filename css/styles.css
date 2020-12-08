@@ -1,0 +1,113 @@
+/*************** 
+Style Tile Reference
+* Typography
+* Colors
+
+* Primary: lime green
+* Secondary: navy blue
+* Heading Font: Alfa Slab 
+* Body Copy: Sans Seriff
+
+****************/
+
+
+
+/*************** 
+Large: Largest, Base/Sitewide Styling
+****************/
+.homepage {
+
+}
+
+.portfolio {
+
+}
+
+.contact {
+
+}
+
+
+
+/*************** 
+Medium: Medium-sized Modules, made up of smaller-Components
+****************/
+
+/* Main Navigation */
+nav {  
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav h1 {
+/*   flex-grow: 1; */
+  margin-right: auto;
+}
+
+nav a:link,
+nav a:visited {
+  color: navy;
+  font-family: 'Alfa Slab One', cursive;
+  
+  letter-spacing: 2px;
+  text-decoration: none;
+  padding: .5em;
+  margin: .5em;
+  transition: font-size .25s;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+  color: lime;
+  font-size: 1.1em;
+}
+
+/* Contact Form */
+fieldset label,
+fieldset input, 
+fieldset textarea {
+    display: block;
+}
+
+
+/*************** 
+Small: Individual Components, specific parts
+****************/
+.homepage h1 {
+  background: red;
+}
+
+.portfolio h1 {
+  background: green;
+}
+
+.contact h1 {
+  background: blue;
+}
+
+
+article img {
+  /*  Past & Current Browsers  */
+  float: left;
+  margin: 3em;
+  width: 50%;
+  
+/*  Future Forward  */
+  border-radius: 50%;
+ shape-outside: circle(50%);
+}
+
+
+
+/*************** 
+Media Queries: At this size, do this. 
+****************/
+@media screen and (max-width: 480px) {
+  
+  nav {
+    flex-direction: column;
+  }
+  
+}
